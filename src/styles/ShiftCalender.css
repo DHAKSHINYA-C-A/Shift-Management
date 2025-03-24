@@ -1,0 +1,489 @@
+/* 
+.main-container1 {
+  display: flex;
+  height: 100vh;
+  margin: -30px;
+}
+
+.calendar-wrapper {
+  flex: 1;
+  padding: 50px;
+  background-color: #f8f9fa;
+  width: 1130px;
+  margin-left: 225px;
+}
+
+.calendar-container {
+  margin-top: -20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.rbc-event-1 {
+  background-color: #ffeb3b;
+  color: #000;
+}
+
+.rbc-event-2 {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.rbc-event-3 {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.rbc-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rbc-toolbar button {
+  background-color: #AAC251;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.rbc-toolbar button:hover {
+  background-color: #899D3D;
+}
+
+.rbc-header {
+  padding-top: 40px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  border: none;
+}
+
+.rbc-time-header-cell {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  border: none;
+}
+
+.rbc-time-content {
+  border-top: 2px solid #007bff;
+}
+
+.rbc-time-slot {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.rbc-time-gutter {
+  background-color: #f8f9fa;
+}
+
+.rbc-event {
+ 
+  padding: 10px;
+  font-size: 14px;
+  background-color: white;
+  color: black;
+ 
+  
+}
+
+.rbc-event-label {
+  display: none;
+}
+
+.rbc-event-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column; 
+  text-align: center; 
+}
+
+.shift-title {
+  color: rgb(144, 31, 31); 
+  margin: 0;
+}
+
+.employee-names p {
+  margin: 0;
+}
+
+.rbc-toolbar-label {
+  display: none; 
+}
+
+.rbc-row {
+  max-height: 15px;
+  font-weight: bolder;
+}
+
+.rbc-today {
+  background-color: #acdfe824;
+}
+
+.rbc-timeslot-group {
+  border-bottom: 1px solid #ddd;
+  min-height: 35px;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+.rbc-label {
+  font-weight: 500;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  max-width: 500px; 
+  width: 100%;
+  font-weight: 500;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 24px; 
+}
+
+.modal-content p {
+  margin: 10px 0; 
+}
+
+.modal-content button {
+  background-color:  #AAC251;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px; 
+  margin-top: 20px; 
+}
+
+.modal-content button:hover {
+  background-color: #899D3D;
+}
+.modal-content .employee-details {
+  display: flex;
+  align-items: center;
+  padding: 5px 0; 
+  font-weight: 400;
+}
+
+.modal-content .employee-details .employee-id {
+  flex: 0 0 50px; 
+  text-align: left;
+  margin-left: 90px; 
+}
+
+.modal-content .employee-details .employee-name {
+  flex: 1; 
+  text-align: left;
+  margin-left: 30px; 
+}
+
+.modal-content .employee-details .availability-status {
+  flex: 0 0 100px;
+  text-align: right;
+  margin-right: 100px; 
+}
+.rbc-time-slot{
+  border-bottom: 0px;
+}
+.rbc-day-slot .rbc-event-content {
+  width: 100%;
+  flex: 1 1 0;
+  word-wrap: break-word;
+  line-height: 1.5;
+  height: 100%;
+  min-height: 1em;
+  font-weight: 500;
+}
+.rbc-day-slot .rbc-event, .rbc-day-slot .rbc-background-event {
+  border-top:0; 
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 11px solid #AAC251;
+  border-radius: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  max-height: 100%;
+  min-height: 20px;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  overflow: hidden;
+  position: absolute;
+} */
+.main-container1 {
+  display: flex;
+  height: 100vh;
+  margin: -30px;
+}
+
+.calendar-wrapper {
+  flex: 1;
+  padding: 50px;
+  background-color: #f8f9fa;
+  width: 1130px;
+  margin-left: 225px;
+}
+
+.calendar-container {
+  margin-top: -20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.rbc-event-1 {
+  background-color: #ffeb3b;
+  color: #000;
+}
+
+.rbc-event-2 {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.rbc-event-3 {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.rbc-event-4 {
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.rbc-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rbc-toolbar button {
+  background-color: #AAC251;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.rbc-toolbar button:hover {
+  background-color: #899D3D;
+}
+
+.rbc-header {
+  padding-top: 40px;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  border: none;
+}
+
+.rbc-time-header-cell {
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  border: none;
+}
+
+.rbc-time-content {
+  border-top: 2px solid #007bff;
+}
+
+.rbc-time-slot {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.rbc-time-gutter {
+  background-color: #f8f9fa;
+}
+
+.rbc-event {
+  /* border-radius: 4px; */
+  padding: 10px;
+  font-size: 14px;
+  background-color: white;
+  color: black;
+}
+
+.rbc-event-label {
+  display: none;
+}
+
+.rbc-event-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column; /* Align text vertically */
+  text-align: center; /* Center text horizontally */
+}
+
+.shift-title {
+  color: rgb(144, 31, 31); /* Title color */
+  margin: 0;
+}
+
+.employee-names p {
+  margin: 0;
+}
+
+.rbc-toolbar-label {
+  display: none; /* Hide the toolbar label */
+}
+
+.rbc-row {
+  max-height: 15px;
+  font-weight: bolder;
+}
+
+.rbc-today {
+  background-color: #acdfe824;
+}
+
+.rbc-timeslot-group {
+  border-bottom: 1px solid #ddd;
+  min-height: 35px;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+.rbc-label {
+  font-weight: 500;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px; /* Adjust padding */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
+  max-width: 500px; /* Set a max-width */
+  width: 100%;
+  font-weight: 500;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 24px; /* Adjust font size */
+}
+
+.modal-content p {
+  margin: 10px 0; /* Adjust margin */
+}
+
+.modal-content button {
+  background-color: #AAC251;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px; /* Rounded corners */
+  margin-top: 20px; /* Adjust margin */
+}
+
+.modal-content button:hover {
+  background-color: #899D3D;
+}
+
+.modal-content .employee-details {
+  display: flex;
+  align-items: center;
+  padding: 5px 0; /* Add padding for spacing */
+  font-weight: 400;
+}
+
+.modal-content .employee-details .employee-id {
+  flex: 0 0 50px; /* Adjust width for ID */
+  text-align: left;
+  margin-left: 90px; /* Adjust left margin */
+}
+
+.modal-content .employee-details .employee-name {
+  flex: 1; /* Take remaining space */
+  text-align: left;
+  margin-left: 30px; /* Add left margin */
+}
+
+.modal-content .employee-details .availability-status {
+  flex: 0 0 100px; /* Adjust width for status */
+  text-align: right;
+  margin-right: 100px; /* Adjust right margin */
+}
+
+.rbc-time-slot {
+  border-bottom: 0px;
+}
+
+.rbc-day-slot .rbc-event-content {
+  width: 100%;
+  flex: 1 1 0;
+  word-wrap: break-word;
+  line-height: 1.5;
+  height: 100%;
+  min-height: 1em;
+  font-weight: 500;
+}
+
+.rbc-day-slot .rbc-event, .rbc-day-slot .rbc-background-event {
+  border-top: 0; /* Adjust the thickness and color as needed */
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 11px solid #AAC251;
+  border-radius: 10px; /* Optional: Adjust the border-radius if you want rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  max-height: 100%;
+  min-height: 20px;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  overflow: hidden;
+  position: absolute;
+}
